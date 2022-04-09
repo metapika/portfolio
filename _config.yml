@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Meta of portfolio websites
-email: meta make a new email for contact
+title: meta design
+email: metamakeanewemail@for.contact
 description: >- # this means to ignore newlines until "baseurl:"
   This one day will be a detailed epic awesome portfolio website for all my works out there
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: meta
+twitter_username: MetaPikachu123
 
 # Build settings
 theme: minima
