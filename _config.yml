@@ -22,7 +22,7 @@ title: meta design
 email: metamakeanewemail@for.contact
 description: >- # this means to ignore newlines until "baseurl:"
   This one day will be a detailed epic awesome portfolio website for all my works out there
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/porfolio" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MetaPikachu123
 

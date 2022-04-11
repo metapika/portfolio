@@ -4,7 +4,8 @@
 
 $text-color: #e6e6e6ff;
 $background-color: #32373bff;
-$content-width: 1600px;
+// $content-width: 1600px;
+$content-width: 2500px;
 
 @import "minima";
 
@@ -18,36 +19,34 @@ $content-width: 1600px;
 	src: url("../assets/fonts/coolvetica.otf");
 }
 
-// .pagebackground {
-//     margin: 2em;
-//     background-image: url("../assets/imgs/image930.png");
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-clip:border-box;
-//     background-position: top center;
-// }
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    text-align: center;
+}
+  
+.box :first-child {
+    align-self:flex-end;
+}
 
 .site-header {
+    position: relative;
+    margin: 2em;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
+    background-image: url(../assets/imgs/image930.png);
 }
 
 .site-footer {
     border-top: 0px solid transparent;
 }
 
-.wrapper {
-    text-align: center;
-    display: flex;
-}
-
 .site-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
     margin: .5em 0em;
+    font-size: 50px;
     font-family: "coolvetica", sans-serif;
+    text-align: center;
 }
 
 .site-nav {
@@ -55,6 +54,9 @@ $content-width: 1600px;
     line-height: 1.4;
     font-size: 35px;
     font-family: "louisGeorge", sans-serif;
+    position:absolute;
+    top:0;
+    right:0;
 }
 
 .page-heading {
