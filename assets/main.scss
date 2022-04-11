@@ -2,7 +2,7 @@
 
 ---
 
-$text-color: #e6e6e6ff;
+$text-color: rgb(241, 241, 241);
 $background-color: #32373bff;
 // $content-width: 1600px;
 $content-width: 2500px;
@@ -19,40 +19,42 @@ $content-width: 2500px;
 	src: url("../assets/fonts/coolvetica.otf");
 }
 
-.box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 2em;
-    text-align: center;
-}
-  
-.box :first-child {
-    align-self:flex-end;
-}
-
 .site-header {
     position: relative;
-    margin: 2em;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     background-image: url(../assets/imgs/image930.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.site-holder a {
+    color: $text-color;
 }
 
 .site-footer {
     border-top: 0px solid transparent;
 }
 
+.site-holder {
+    display: block;
+    text-align: center;
+    margin: 3em 0em 5em 0em;
+}
+
 .site-title {
-    margin: .5em 0em;
+    float: none;
     font-size: 50px;
     font-family: "coolvetica", sans-serif;
-    text-align: center;
 }
 
 .site-nav {
     text-align: right;
     line-height: 1.4;
     font-size: 35px;
+    margin: 1.2em 2em 0em;
     font-family: "louisGeorge", sans-serif;
     position:absolute;
     top:0;
@@ -60,9 +62,9 @@ $content-width: 2500px;
 }
 
 .page-heading {
-    margin-left: 2em;
+    margin-left: 1.5em;
     text-align: left;
-    font-size: 70px;
+    font-size: 100px;
     font-family: "coolvetica", sans-serif;
 }
 
@@ -91,7 +93,7 @@ $content-width: 2500px;
 }
 
 .post-content h1 {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     font-family: "coolvetica", sans-serif;
     color: #748cabff;
