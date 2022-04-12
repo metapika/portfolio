@@ -5,7 +5,7 @@
 $text-color: rgb(241, 241, 241);
 $background-color: #32373bff;
 // $content-width: 1600px;
-$content-width: 2500px;
+$content-width: 3200px;
 
 @import "minima";
 
@@ -50,7 +50,7 @@ $content-width: 2500px;
     font-family: "coolvetica", sans-serif;
 }
 
-.site-nav {
+.nav-bar {
     text-align: right;
     line-height: 1.4;
     font-size: 35px;
@@ -61,6 +61,10 @@ $content-width: 2500px;
     right:0;
 }
 
+.nav-bar a {
+    color: $text-color;
+}
+
 .page-heading {
     margin-left: 1.5em;
     text-align: left;
@@ -69,7 +73,7 @@ $content-width: 2500px;
 }
 
 .home-content {
-    max-width: 40%;
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
     font-size: 25px;
@@ -79,6 +83,7 @@ $content-width: 2500px;
 
 .home-content h1 {
     text-align: center;
+    max-width: 600px;
     font-size: 60px;
     font-family: "coolvetica", sans-serif;
     color: #748cabff;
