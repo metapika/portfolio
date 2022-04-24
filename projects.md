@@ -1,7 +1,7 @@
 ---
 layout: page
 navtitle: Projects
-title: PROJECTS
+title: projects.
 permalink: /projects/
 ---
 

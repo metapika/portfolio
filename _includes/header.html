@@ -1,6 +1,8 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    <img class="logo" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/logo_square_nobg_white.png" alt= "mockupimage">
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <div class="site-holder">
@@ -9,12 +11,22 @@
     
     {%- if page_paths -%}
       <nav class="nav-bar">
-        <a class="page-link" href="{{ site.baseurl }}/services">Services</a>
-        <a class="page-link" href="{{ site.baseurl }}/projects">Projects</a>
-        <a class="page-link" href="{{ site.baseurl }}/about">About</a>
-        <a class="page-link" href="{{ site.baseurl }}/contact">Contact</a>
+        {%- if page.navtitle != "Services" -%}
+          <a class="page-link" href="{{ site.baseurl }}/services"> Services </a>
+        {%- endif -%}
+        <!-- {%- if page.navtitle != "Projects" -%}
+          <a class="page-link" href="{{ site.baseurl }}/projects"> Projects </a>
+        {%- endif -%} -->
+        {%- if page.navtitle != "About" -%}
+          <a class="page-link" href="{{ site.baseurl }}/about"> About </a>
+        {%- endif -%}
+        {%- if page.navtitle != "Contact" -%}
+          <a class="page-link" href="{{ site.baseurl }}/contact"> Contact </a>
+        {%- endif -%}
         <br>
-        <a class="page-link" href="https://twitter.com/MetaPikachu123/" target="blank">Twitter</a>
+        <a class="page-link" href="https://twitter.com/_metadesign/" target="blank">Twitter</a>
+        <br>
+        <a class="page-link" href="https://www.behance.net/metapika/" target="blank">Behance</a>
         <br>
       </nav>
     {%- endif -%}

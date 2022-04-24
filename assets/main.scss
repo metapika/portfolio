@@ -3,9 +3,10 @@
 ---
 
 $text-color: rgb(241, 241, 241);
-$background-color: #32373bff;
-// $content-width: 1600px;
+$header-color: rgb(113, 137, 255);
+$background-color: rgb(31, 33, 35);
 $content-width: 3200px;
+$site-width: 1000px;
 
 @import "minima";
 
@@ -19,15 +20,101 @@ $content-width: 3200px;
 	src: url("../assets/fonts/coolvetica.otf");
 }
 
+@font-face {
+	font-family: "audowide";
+	src: url("../assets/fonts/Audiowide-Regular.ttf");
+}
+
+@font-face {
+	font-family: "akshar";
+	src: url("../assets/fonts/Akshar-VariableFont_wght.ttf");
+}
+
+a {
+    color: rgb(186, 201, 220);
+}
+
 .site-header {
     position: relative;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    background-image: url(../assets/imgs/image930.png);
+    // background-image: url(../assets/imgs/image930.png);
+    background-image: url(../assets/imgs/siteBanner.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-attachment: scroll;
     background-size: cover;
+}
+
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.img-left {
+    float: left;
+    max-width: 600px;
+    margin: 1em 0em 1em -25em;
+}
+
+.img-right {
+    float: right;
+    max-width: 600px;
+    margin: 1em -25em 1em 0em;
+}
+
+.logo {
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+.img-wdesc {
+    height: 530px;
+    width: 500px;
+    padding: 0px 15px;
+}
+
+.image-column {
+    padding: 5px;
+}
+
+.image-column img {
+    height: 100px;
+    width: 150px;
+}
+
+.image-in-column {
+    float: left;
+    padding: 5px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row img {
+    height: 250px;
+	flex-basis: 150px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.image-in-row {
+    flex: 400px;
+    padding: 5px;
+    border-radius: 1em;
 }
 
 .site-holder a {
@@ -47,18 +134,26 @@ $content-width: 3200px;
 .site-title {
     float: none;
     font-size: 50px;
-    font-family: "coolvetica", sans-serif;
+    font-family: "audowide", sans-serif;
 }
 
 .nav-bar {
     text-align: right;
-    line-height: 1.4;
-    font-size: 35px;
-    margin: 1em 2em 0em;
-    font-family: "louisGeorge", sans-serif;
+    line-height: 1.6;
+    font-size: 28px;
+    margin: 3em 0em 0em;
+    font-family: "akshar", sans-serif;
     position:absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
+    word-spacing: 22px;
+    padding: 40px 3em 40px;
+    // background-image: url(../assets/imgs/navBarBackground.png);
+    // background-clip: padding-box;
+    // background-position-y: center;
+    // background-position-x: right;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 }
 
 .nav-bar a {
@@ -69,53 +164,66 @@ $content-width: 3200px;
     margin-left: 1em;
     text-align: left;
     font-size: 100px;
-    font-family: "coolvetica", sans-serif;
+    font-family: "audowide", sans-serif;
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: $site-width;
     margin: 0 auto;
     text-align: left;
     font-size: 25px;
-    line-height: 1.4;
-    font-family: "louisGeorge", sans-serif;
+    line-height: 1.6;
+    font-family: "akshar", sans-serif;
 }
 
 .home-content h1 {
     text-align: center;
-    max-width: 600px;
+    max-width: $site-width;
     font-size: 60px;
-    font-family: "coolvetica", sans-serif;
-    color: #748cabff;
+    font-family: "audowide", sans-serif;
+    color: $header-color;
 }
 
 .post-content {
-    margin: 0em 0em 0em 9em;
+    margin: 2em 0em 2em 9em;
     max-width: 600px;
     text-align: left;
-    font-size: 25px;
-    line-height: 1.4;
-    font-family: "louisGeorge", sans-serif;
+    font-size: 30px;
+    line-height: 1.6;
+    font-family: "akshar", sans-serif;
 }
 
 .post-content h1 {
-    text-align: left;
+    margin-top: 3em;
+    text-align: right;
     max-width: 600px;
     font-size: 40px;
-    font-family: "coolvetica", sans-serif;
-    color: #748cabff;
+    font-family: "audowide", sans-serif;
+    color: $header-color;
 }
+
+.twitter-button {
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: $header-color .125em solid;
+    padding: .25em 1.25em;
+    border-radius: 0.25em;
+}
+
 
 @media (max-width: 1400px) {
     .nav-bar {
         text-align: right;
-        line-height: 1.4;
+        line-height: 1.6;
         font-size: 35px;
         margin: 1em 2em 0em;
-        font-family: "louisGeorge", sans-serif;
+        font-family: "akshar", sans-serif;
         position:absolute;
         top:2.5em;
         right:0;
+        word-spacing: 22px;
     }
     .site-holder {
         display: block;
@@ -130,26 +238,53 @@ $content-width: 3200px;
         max-width: 600px;
         text-align: left;
         font-size: 25px;
-        line-height: 1.4;
-        font-family: "louisGeorge", sans-serif;
+        line-height: 1.6;
+        font-family: "akshar", sans-serif;
     }
     .page-heading {
         margin-left: 0em;
         text-align: left;
         font-size: 80px;
-        font-family: "coolvetica", sans-serif;
+        font-family: "audowide", sans-serif;
+    }
+}
+
+@media (max-width: 1300px) {
+    .img-left {
+        float: left;
+        max-width: 400px;
+        margin: 1em 0em 2em;
+    }
+    .img-right {
+        float: right;
+        max-width: 400px;
+        margin: 1em 0em 2em;
     }
 }
 
 @media (max-width: 690px) {
     .nav-bar {
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.6;
         font-size: 35px;
         margin: 1em 2em 0em;
-        font-family: "louisGeorge", sans-serif;
-        position:absolute;
-        top:2.5em;
-        right:0;
+        font-family: "akshar", sans-serif;
+        position: absolute;
+        top: 2.5em;
+        right: 0;
+        word-spacing: 22px;
+    }
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0em;
+        flex-direction: column;
+    }
+    .img-wdesc {
+        height: 400px;
+        width: 600px;
+        padding: 0px 15px;
+        margin: 1em 0em;
     }
 }

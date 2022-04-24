@@ -1,25 +1,39 @@
 ---
 layout: home
 navtitle: Home
-title: HOME
+title: welcome.
 ---
 
-# Comfortable By Design
+<div class="img-container"> 
+    <div>
+        <h1>About me</h1>
+        Hello! I'm Nick. I am a freelance graphic designer and game developer currently working on a <a class="page-link" href="https://metapikachu.itch.io/robosamurai">passion game project</a> and comissions. I have experience with many creative work programs such as Blender, Inkscape and Unity.
+        <br>
+        <a class="page-link" href="{{ site.baseurl }}/about">
+            <img class="site-arrow" src="{{ site.url }}{{ site.baseurl }}/assets/svgs/corner-down-right.svg" alt="">Read more about me
+        </a> 
+    </div>
+    <img class="img-wdesc" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/iphone_site.png" alt= "mockupimage">
+</div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+# Featured Projects
 
-# You won't regret it
+<div class="featured-projects">
+    <h2>UI/UX / Layout Concept Art</h2>
+    <img class="img-left" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/spotify_site.png" alt= "mockupimage">
+    <img class="img-right" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/steam_site.png" alt= "mockupimage">
+    <h2>Icon / Logo Design</h2>
+    <div class="image-row">
+        <img class="image-in-row" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/rs_logo.png" alt= "mockupimage">
+        <img class="image-in-row" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/rs_logo2.png" alt= "mockupimage">
+        <img class="image-in-row" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/rs_logo3.png" alt= "mockupimage">
+    </div>
+</div>
 
-Arcu felis bibendum ut tristique et egestas quis. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. 
+# Commissions
 
-# Or maybe you will, we do not care
+Have anything you need help with? Need a designer/3D modeller? Feel free to send me an email or DM me on Twitter!
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-# In other words, maybe try getting better
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-# Or not idfk
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<a class="page-link" href="{{ site.baseurl }}/services">
+    <img class="site-arrow" src="{{ site.url }}{{ site.baseurl }}/assets/svgs/corner-down-right.svg" alt="">Read more about the things I do
+</a> 

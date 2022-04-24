@@ -1,15 +1,14 @@
 ---
 layout: page
 navtitle: Contact
-title: CONTACT
+title: contact.
 permalink: /contact/
 ---
 
-# Email
-//Email template maybe
-- Email button
+# DM me on Twitter!
 
-# Social media
+<a href="https://twitter.com/_metadesign" class="twitter-button" target="blank">Get in touch!</a>
 
-- Twitter
-- Instagram?
+# Email me!
+
+**no business email set up yet, DM me on twitter please** 
