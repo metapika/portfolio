@@ -1,22 +1,25 @@
 ---
 layout: home
-navtitle: Home
-title: welcome.
+title: sections
 ---
 
-<div class="img-container"> 
-    <div>
-        <h1>About me</h1>
-        Hello! I'm Nick. I am a freelance graphic designer and game developer currently working on a <a class="page-link" href="https://metapikachu.itch.io/robosamurai">passion game project</a> and comissions. I have experience with many creative work programs such as Blender, Inkscape and Unity.
-        <br>
-        <a class="page-link" href="{{ site.baseurl }}/about">
-            <img class="site-arrow" src="{{ site.url }}{{ site.baseurl }}/assets/svgs/corner-down-right.svg" alt="">Read more about me
-        </a> 
-    </div>
-    <img class="img-wdesc" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/iphone_site.png" alt= "mockupimage">
-</div>
+<a class="page-link" href="{{ site.baseurl }}/3d"> 3D Portfolio </a>
 
-# Featured Projects
+<a class="page-link" href="{{ site.baseurl }}/2d"> 2D Portfolio </a>
+
+<a class="page-link" href="{{ site.baseurl }}/hire"> Commisions </a>
+
+<a class="page-link" href="{{ site.baseurl }}/about"> About me </a>
+
+<!-- <h1>About me</h1>
+Hello! I'm Nick. I am a freelance graphic designer and game developer currently working on a <a class="page-link" href="https://metapikachu.itch.io/robosamurai">passion game project</a> and comissions. I have experience with many creative work programs such as Blender, Inkscape and Unity.
+<br>
+<a class="page-link" href="{{ site.baseurl }}/about">
+    <img class="site-arrow" src="{{ site.url }}{{ site.baseurl }}/assets/svgs/corner-down-right.svg" alt="">Read more about me
+</a>  -->
+
+
+<!-- # Featured Projects
 
 <div class="featured-projects">
     <h2>UI/UX / Layout Concept Art</h2>
@@ -28,12 +31,12 @@ title: welcome.
         <img class="image-in-row" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/rs_logo2.png" alt= "mockupimage">
         <img class="image-in-row" src="{{ site.url }}{{ site.baseurl }}/assets/imgs/projects/rs_logo3.png" alt= "mockupimage">
     </div>
-</div>
+</div> -->
 
-# Commissions
+<!-- # Commissions
 
 Have anything you need help with? Need a designer/3D modeller? Feel free to send me an email or DM me on Twitter!
 
 <a class="page-link" href="{{ site.baseurl }}/services">
     <img class="site-arrow" src="{{ site.url }}{{ site.baseurl }}/assets/svgs/corner-down-right.svg" alt="">Read more about the things I do
-</a> 
+</a>  -->

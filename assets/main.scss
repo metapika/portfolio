@@ -3,7 +3,8 @@
 ---
 
 $text-color: rgb(241, 241, 241);
-$header-color: rgb(113, 137, 255);
+$header-color: #71a0ff;
+$header-bg-color: rgb(18, 19, 20);
 $background-color: rgb(31, 33, 35);
 $content-width: 3200px;
 $site-width: 1000px;
@@ -34,16 +35,69 @@ a {
     color: rgb(186, 201, 220);
 }
 
+.home-content {
+    max-width: $site-width;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "akshar", sans-serif;
+}
+
+.home-content h1 {
+    text-align: left;
+    max-width: $site-width;
+    font-size: 60px;
+    font-family: "audowide", sans-serif;
+    color: $header-color;
+}
+
+.page-content {
+    padding: 30px 0px 0px 100px;
+    flex: 1;
+    align-self: start;
+}
+
+.post-content {
+    // margin: 2em 0em 2em 9em;
+    max-width: 700px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.6;
+    font-family: "akshar", sans-serif;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: darkgray;
+}
+
+#small {
+    max-width: 300px;
+}
+
+#big {
+    max-width: 600px;
+}
+
+.post-content h1 {
+    margin-top: 3em;
+    text-align: right;
+    max-width: 600px;
+    font-size: 40px;
+    font-family: "audowide", sans-serif;
+    color: $header-color;
+}
+
 .site-header {
     position: relative;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    // background-image: url(../assets/imgs/image930.png);
-    background-image: url(../assets/imgs/siteBanner.png);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-attachment: scroll;
-    background-size: cover;
+    // background-image: url(../assets/imgs/siteBanner.png);
+    // background-repeat: no-repeat;
+    // background-position-y: center;
+    // background-attachment: scroll;
+    // background-size: cover;
 }
 
 .featured-projects {
@@ -54,87 +108,41 @@ a {
     margin-bottom: 2em;
 }
 
-.img-left {
-    float: left;
-    max-width: 600px;
-    margin: 1em 0em 1em -25em;
-}
-
-.img-right {
-    float: right;
-    max-width: 600px;
-    margin: 1em -25em 1em 0em;
-}
-
 .logo {
     float: left;
     height: 70px;
     width: 70px;
 }
 
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0em;
-}
-
-.img-wdesc {
-    height: 530px;
-    width: 500px;
-    padding: 0px 15px;
-}
-
-.image-column {
-    padding: 5px;
-}
-
-.image-column img {
-    height: 100px;
-    width: 150px;
-}
-
-.image-in-column {
-    float: left;
-    padding: 5px;
-}
-
-.image-row {
-    display: flex;
-    justify-content: center;
-}
-
-.image-row img {
-    height: 250px;
-	flex-basis: 150px;
-	flex-grow: 0;
-	flex-shrink: 0;
-}
-
-.image-in-row {
-    flex: 400px;
-    padding: 5px;
-    border-radius: 1em;
-}
-
 .site-holder a {
-    color: $text-color;
+    color: $header-color;
+}
+
+.site-holder {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 3em 2em 5em 2em;
+    justify-content: center;
+}
+
+.site-holder img {
+    max-width: 80px;
 }
 
 .site-footer {
     border-top: 0px solid transparent;
 }
 
-.site-holder {
-    display: block;
-    text-align: center;
-    margin: 3em 2em 5em 2em;
+.site-header {
+    background-color: $header-bg-color;
 }
 
 .site-title {
     float: none;
     font-size: 50px;
     font-family: "audowide", sans-serif;
+    padding-left: 0.25em;
 }
 
 .nav-bar {
@@ -167,41 +175,6 @@ a {
     font-family: "audowide", sans-serif;
 }
 
-.home-content {
-    max-width: $site-width;
-    margin: 0 auto;
-    text-align: left;
-    font-size: 25px;
-    line-height: 1.6;
-    font-family: "akshar", sans-serif;
-}
-
-.home-content h1 {
-    text-align: center;
-    max-width: $site-width;
-    font-size: 60px;
-    font-family: "audowide", sans-serif;
-    color: $header-color;
-}
-
-.post-content {
-    margin: 2em 0em 2em 9em;
-    max-width: 600px;
-    text-align: left;
-    font-size: 30px;
-    line-height: 1.6;
-    font-family: "akshar", sans-serif;
-}
-
-.post-content h1 {
-    margin-top: 3em;
-    text-align: right;
-    max-width: 600px;
-    font-size: 40px;
-    font-family: "audowide", sans-serif;
-    color: $header-color;
-}
-
 .twitter-button {
     font-size: 2rem;
     display: inline-block;
@@ -210,86 +183,4 @@ a {
     border: $header-color .125em solid;
     padding: .25em 1.25em;
     border-radius: 0.25em;
-}
-
-
-@media (max-width: 1400px) {
-    .nav-bar {
-        text-align: right;
-        line-height: 1.6;
-        font-size: 35px;
-        margin: 1em 2em 0em;
-        font-family: "akshar", sans-serif;
-        position:absolute;
-        top:2.5em;
-        right:0;
-        word-spacing: 22px;
-    }
-    .site-holder {
-        display: block;
-        text-align: center;
-        margin: 3em 2em 10em 2em;
-    }
-}
-
-@media (max-width: 1000px) {
-    .post-content {
-        margin: 0em 0em 0em 1em;
-        max-width: 600px;
-        text-align: left;
-        font-size: 25px;
-        line-height: 1.6;
-        font-family: "akshar", sans-serif;
-    }
-    .page-heading {
-        margin-left: 0em;
-        text-align: left;
-        font-size: 80px;
-        font-family: "audowide", sans-serif;
-    }
-}
-
-@media (max-width: 1300px) {
-    .img-left {
-        float: left;
-        max-width: 400px;
-        margin: 1em 0em 2em;
-    }
-    .img-right {
-        float: right;
-        max-width: 400px;
-        margin: 1em 0em 2em;
-    }
-    .image-row{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 690px) {
-    .nav-bar {
-        text-align: center;
-        line-height: 1.6;
-        font-size: 26px;
-        margin: 1em 2em 0em;
-        font-family: "akshar", sans-serif;
-        position: absolute;
-        top: 4.1em;
-        right: 0;
-        word-spacing: 22px;
-      }
-    .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1em 0em;
-        flex-direction: column;
-    }
-    .img-wdesc {
-        height: 400px;
-        width: 600px;
-        padding: 0px 15px;
-        margin: 1em 0em;
-    }
 }
